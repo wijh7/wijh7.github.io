@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kenalan dengan Breadlight | Breadlight</title>
+<meta name="description" content="Breadlight adalah aplikasi Alkitab Android yang tenang: Alkitab offline, jurnal doa pribadi, tanpa iklan, tanpa pelacakan, tanpa akun.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kenalan dengan Breadlight | Breadlight">
+<meta property="og:description" content="Breadlight adalah aplikasi Alkitab Android yang tenang: Alkitab offline, jurnal doa pribadi, tanpa iklan, tanpa pelacakan, tanpa akun.">
+<meta property="og:image" content="https://wijh7.github.io/breadlight/img/hero.jpg">
+<link rel="canonical" href="https://wijh7.github.io/breadlight/about.id.html">
+<link rel="alternate" hreflang="en" href="https://wijh7.github.io/breadlight/about.html">
+<link rel="alternate" hreflang="id" href="https://wijh7.github.io/breadlight/about.id.html">
+<link rel="alternate" hreflang="es" href="https://wijh7.github.io/breadlight/about.es.html">
+<link rel="alternate" hreflang="pt" href="https://wijh7.github.io/breadlight/about.pt.html">
+<link rel="alternate" hreflang="fr" href="https://wijh7.github.io/breadlight/about.fr.html">
+<link rel="alternate" hreflang="de" href="https://wijh7.github.io/breadlight/about.de.html">
+<link rel="alternate" hreflang="ru" href="https://wijh7.github.io/breadlight/about.ru.html">
+<link rel="alternate" hreflang="hi" href="https://wijh7.github.io/breadlight/about.hi.html">
+<link rel="alternate" hreflang="x-default" href="https://wijh7.github.io/breadlight/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<style>
+/* Layout: satu kolom bacaan 720px, hero hijau penuh lebar, tabel perbandingan dan tanya-jawab di bawah */
+:root{
+  --bg:#F6F2EA; --surface:#FDFBF7; --fg:#1C2A23; --muted:#5A675F; --line:#DDD6C7;
+  --green:#1F4D3A; --on-green:#F4EFE6; --gold:#8A6212; --gold-soft:#E2B65A; --chip:#E7EFE9;
+  --ok:#2E7D57; --no:#9A5B2E;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif; --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111915; --surface:#18221D; --fg:#ECE6D8; --muted:#A5B0A8; --line:#2B3831;
+  --green:#1F4D3A; --on-green:#F4EFE6; --gold:#E2B65A; --gold-soft:#E2B65A; --chip:#21332A;
+  --ok:#6FC79A; --no:#D9A271; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111915; --surface:#18221D; --fg:#ECE6D8; --muted:#A5B0A8; --line:#2B3831;
+  --green:#1F4D3A; --on-green:#F4EFE6; --gold:#E2B65A; --gold-soft:#E2B65A; --chip:#21332A;
+  --ok:#6FC79A; --no:#D9A271; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.65 var(--sans);-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px;border-radius:6px}
+
+/* hero */
+.hero{background:var(--green);color:var(--on-green)}
+.hero .wrap{padding-block:40px 0}
+.brand{font:700 20px/1 var(--serif);letter-spacing:.3px;margin:0 0 28px}
+.hero h1{font-size:clamp(34px,7.4vw,52px);line-height:1.08;letter-spacing:-.5px;font-weight:700}
+.lead{font-size:19px;line-height:1.55;margin:18px 0 0;max-width:34em;color:#E3EADF}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 36px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-gold{background:var(--gold-soft);color:#1A2A20}
+.btn-line{background:transparent;color:var(--on-green);border-color:rgba(244,239,230,.55)}
+.hero img{display:block;width:100%;height:auto;aspect-ratio:1024/500;border-radius:14px 14px 0 0;margin-top:4px}
+
+section{padding-block:52px 0}
+h2{font-size:clamp(27px,5.2vw,34px);line-height:1.15;letter-spacing:-.3px;margin-bottom:14px}
+.kicker{font:600 12.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+p{margin:0 0 14px}
+.muted{color:var(--muted)}
+
+
+/* galeri layar */
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:22px calc(-1*max(16px,env(safe-area-inset-left,0px))) 0;padding:6px max(16px,env(safe-area-inset-left,0px)) 18px;-webkit-overflow-scrolling:touch}
+.shot{flex:none;width:min(62vw,250px);scroll-snap-align:start;margin:0}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:9/16;border-radius:22px;border:1px solid var(--line);background:var(--surface);box-shadow:0 10px 30px rgba(20,40,30,.14)}
+.shot figcaption{font-size:14.5px;line-height:1.45;color:var(--muted);margin-top:10px;padding-inline:4px}
+.shot figcaption b{display:block;color:var(--fg);font:600 15.5px/1.35 var(--serif);margin-bottom:2px}
+.hint{font-size:14px;color:var(--muted);margin:2px 0 0}
+/* satu pagi */
+.day{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+.day li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.day time{font:700 15px/1.5 var(--sans);color:var(--gold);white-space:nowrap;min-width:3.6em}
+.day b{font:600 18px/1.35 var(--serif);display:block;margin-bottom:2px}
+.day span{color:var(--muted);font-size:16px}
+
+/* ringkas: tiga janji */
+.promises{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:22px}
+.promise{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;min-width:0}
+.promise h3{font-size:20px;margin-bottom:6px}
+.promise p{margin:0;font-size:15.5px;line-height:1.55;color:var(--muted)}
+
+/* fitur */
+.feat{display:grid;gap:0;margin:8px 0 0;padding:0;list-style:none}
+.feat li{display:grid;grid-template-columns:minmax(0,11em) minmax(0,1fr);gap:6px 22px;padding:16px 0;border-top:1px solid var(--line)}
+.feat li:last-child{border-bottom:1px solid var(--line)}
+.feat b{font:600 17px/1.35 var(--serif)}
+.feat span{color:var(--muted);font-size:16px}
+@media (max-width:560px){.feat li{grid-template-columns:1fr}}
+
+/* tabel */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-top:18px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15.5px;line-height:1.5}
+th,td{text-align:left;vertical-align:top;padding:13px 16px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font:600 13px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:transparent}
+th.us{color:var(--gold)}
+td:first-child{font-weight:600;width:26%}
+td.us{background:var(--chip)}
+.yes{color:var(--ok);font-weight:600}
+.note{font-size:14.5px;color:var(--muted);margin-top:12px}
+
+/* jujur */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:20px}
+.box{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);min-width:0}
+.box h3{font-size:20px;margin-bottom:10px}
+.box ul{margin:0;padding-left:1.15em}
+.box li{margin:0 0 8px}
+
+/* tanya jawab */
+.faq{margin-top:12px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:18px 0;font:600 18px/1.4 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;font:400 26px/1 var(--sans);color:var(--gold);margin-top:-2px}
+details[open] summary::after{content:"\2212"}
+details .a{padding:0 0 18px;color:var(--fg)}
+details .a p{margin:0 0 10px}
+details .a p:last-child{margin:0}
+
+/* bagikan */
+.share{margin-top:56px;background:var(--green);color:var(--on-green);border-radius:18px;padding:26px 22px}
+.share h2{margin-bottom:8px}
+.share p{color:#E3EADF}
+.blurb{background:rgba(0,0,0,.22);border-radius:12px;padding:14px 16px;font-size:15.5px;line-height:1.55;white-space:pre-wrap;margin:14px 0 16px;color:#F4EFE6;user-select:all}
+.status{margin-left:12px;font-size:14.5px;color:var(--gold-soft)}
+footer{padding-block:34px max(40px,env(safe-area-inset-bottom,0px));font-size:14.5px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.langs{display:flex;flex-wrap:wrap;gap:6px 8px;margin:0 0 26px;padding:0;list-style:none}
+.langs a{display:inline-block;padding:6px 12px;border-radius:999px;font:500 14px/1.2 var(--sans);text-decoration:none;color:var(--on-green);border:1px solid rgba(244,239,230,.35)}
+.langs a[aria-current="true"]{background:var(--gold-soft);color:#1A2A20;border-color:var(--gold-soft);font-weight:600}
+.legal{display:flex;flex-wrap:wrap;gap:6px 18px}
+html[lang="hi"]{--serif:'Noto Serif Devanagari','Source Serif 4',serif;--sans:'Noto Sans Devanagari','Inter',system-ui,sans-serif}
+html[lang="hi"] body{line-height:1.8}
+html[lang="hi"] h1,html[lang="hi"] h2{line-height:1.3;letter-spacing:0}
+.kicker{text-transform:none}
+.hero .wrap{max-width:980px;padding-block:36px 44px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.hero .hero-photo{display:block;width:100%;height:auto;aspect-ratio:582/613;object-fit:cover;border-radius:18px;margin:0;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.hero-actions{margin-bottom:0}
+.shots{scroll-padding-left:max(16px,env(safe-area-inset-left,0px))}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr;gap:26px}.hero .hero-photo{aspect-ratio:16/10;object-position:50% 28%}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <ul class="langs" aria-label="Bahasa"><li><a href="about.html" hreflang="en" lang="en">English</a></li><li><a href="about.id.html" hreflang="id" lang="id" aria-current="true">Bahasa Indonesia</a></li><li><a href="about.es.html" hreflang="es" lang="es">Español</a></li><li><a href="about.pt.html" hreflang="pt" lang="pt">Português</a></li><li><a href="about.fr.html" hreflang="fr" lang="fr">Français</a></li><li><a href="about.de.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="about.ru.html" hreflang="ru" lang="ru">Русский</a></li><li><a href="about.hi.html" hreflang="hi" lang="hi">हिन्दी</a></li></ul>
+    <div class="hero-grid">
+    <div class="hero-text">
+    <p class="brand">Breadlight</p>
+    <h1>Aplikasi Alkitab yang akhirnya tenang.</h1>
+    <p class="lead">Baca Alkitab, berdoa, dan menulis jurnal rohani di HP. Tanpa iklan, tanpa pelacakan, tanpa daftar akun. Bisa dipakai tanpa internet.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="https://play.google.com/store/apps/details?id=com.breadlight.app&hl=id" target="_blank" rel="noopener">Lihat di Google Play</a>
+      <a class="btn btn-line" href="#faq">Ada pertanyaan?</a>
+    </div>
+    </div>
+    <img class="hero-photo" src="img/hero-photo.jpg" width="582" height="613" alt="">
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<section><p class="kicker">Singkatnya</p><h2>Breadlight itu apa?</h2><p>Breadlight adalah aplikasi Android untuk waktu teduh. Isinya Alkitab yang bisa dibaca tanpa sinyal, kartu ayat harian, panduan waktu teduh singkat, dan jurnal doa pribadi.</p><p>Idenya sederhana. Buka HP untuk bertemu Tuhan, bukan untuk diganggu iklan, notifikasi, atau timeline orang lain.</p><div class="promises"><div class="promise"><h3>Tenang</h3><p>Tidak ada iklan. Tidak ada streak atau skor, dan tidak ada rasa bersalah kalau sehari terlewat.</p></div><div class="promise"><h3>Pribadi</h3><p>Tanpa akun. Jurnal tersimpan di HP kamu sendiri dan tidak dikirim ke server kami.</p></div><div class="promise"><h3>Tetap jalan</h3><p>Alkitab tersimpan di HP, jadi bisa dibaca di pesawat, di gunung, atau saat kuota habis.</p></div></div></section>
+<section><p class="kicker">Seperti apa tampilannya</p><h2>Lihat langsung isinya</h2><p class="muted">Tangkapan layar dari aplikasinya. Geser ke samping untuk melihat semuanya.</p><div class="shots" role="region" aria-label="Lihat langsung isinya" tabindex="0"><figure class="shot"><img src="img/ss-1.jpg" width="540" height="960" loading="lazy" alt="Baca Alkitab offline"><figcaption><b>Baca Alkitab offline</b></figcaption></figure><figure class="shot"><img src="img/ss-2.jpg" width="540" height="960" loading="lazy" alt="Ayat harian"><figcaption><b>Ayat harian</b></figcaption></figure><figure class="shot"><img src="img/ss-3.jpg" width="540" height="960" loading="lazy" alt="Jurnal pribadi"><figcaption><b>Jurnal pribadi</b></figcaption></figure><figure class="shot"><img src="img/ss-4.jpg" width="540" height="960" loading="lazy" alt="Tulis catatan baru"><figcaption><b>Tulis catatan baru</b></figcaption></figure><figure class="shot"><img src="img/ss-5.jpg" width="540" height="960" loading="lazy" alt="Seni ayat"><figcaption><b>Seni ayat</b></figcaption></figure><figure class="shot"><img src="img/ss-6.jpg" width="540" height="960" loading="lazy" alt="Tema baca"><figcaption><b>Tema baca</b></figcaption></figure></div></section>
+<section><p class="kicker">Contoh pemakaian</p><h2>Satu hari bersama Breadlight</h2><ol class="day"><li><time>Pagi</time><div><b>Buka kartu ayat</b><span>Baca satu ayat dan renungan singkatnya, sambil menunggu kopi jadi.</span></div></li><li><time>Tenang</time><div><b>Waktu teduh beberapa menit</b><span>Ikuti sesi terpandu: firman, renungan, doa. Berhenti kapan saja, lanjut nanti.</span></div></li><li><time>Siang</time><div><b>Kirim ayat untuk teman</b><span>Ada teman yang lagi berat? Pilih situasinya, tambah namanya, kirim lewat WhatsApp.</span></div></li><li><time>Malam</time><div><b>Tulis jurnal doa</b><span>Catat syukur dan pergumulan hari ini. Hanya kamu yang bisa membacanya.</span></div></li></ol></section>
+<section><p class="kicker">Isi aplikasinya</p><h2>Apa saja yang bisa dilakukan?</h2><ul class="feat"><li><b>Baca Alkitab offline</b><span>13 terjemahan dalam 10 bahasa. Cari per kata, per frasa, atau per alamat ayat seperti Yohanes 3:16. Ada penanda, stabilo, dan catatan di tiap ayat. Teks ayat selalu persis, tidak dipersingkat atau diparafrasekan.</span></li><li><b>Kartu ayat harian</b><span>Satu ayat pilihan, renungan singkat, dan satu pertanyaan lembut untuk dibawa seharian. Ada edisi khusus untuk Adven, Natal, Paskah, dan lainnya.</span></li><li><b>Waktu teduh terpandu</b><span>Firman, renungan, doa, praktik, dan pertumbuhan dalam beberapa menit yang tenang. Dimulai dari “Rooted by the Water” (Mazmur 1).</span></li><li><b>Jurnal doa pribadi</b><span>Tulis doa, syukur, pelajaran, atau catatan firman, dan kaitkan dengan ayat kalau mau. Tersimpan hanya di perangkatmu.</span></li><li><b>Ayat untuk seseorang</b><span>Pilih situasi seperti sakit, berduka, atau awal yang baru, tambahkan nama dan beberapa kata darimu, lalu kirim teks Alkitab yang persis lewat WhatsApp atau aplikasi lain.</span></li><li><b>Seni ayat</b><span>Ubah satu ayat jadi gambar untuk Story atau postingan. 10 gaya Klasik gratis.</span></li></ul></section>
+<section id="beda"><p class="kicker">Dibanding yang lain</p><h2>Apa bedanya dengan Bible app besar yang sudah ada?</h2><p>App Alkitab besar itu bagus dan sudah menolong banyak orang. Breadlight tidak mencoba menggantikannya. Bedanya ada pada cara Breadlight dirancang: kecil, sunyi, dan sepenuhnya milik kamu.</p>
+<div class="tbl" role="region" aria-label="Apa bedanya dengan Bible app besar yang sudah ada?" tabindex="0"><table><thead><tr><th></th><th class="us">Breadlight</th><th>App Alkitab besar, pada umumnya</th></tr></thead><tbody><tr><td>Akun</td><td class="us">Tidak perlu. Langsung pakai.</td><td>Biasanya ditawarkan, untuk sinkron, rencana baca, dan komunitas.</td></tr><tr><td>Iklan dan pelacakan</td><td class="us">Tidak ada iklan. Tidak ada analitik.</td><td>Berbeda-beda tiap app. Cek kebijakan privasinya.</td></tr><tr><td>Jurnal doa</td><td class="us">Fitur utama. Tersimpan di HP, bisa diekspor dan diimpor.</td><td>Umumnya berupa catatan ayat, sering ikut tersimpan di akun atau cloud.</td></tr><tr><td>Suasana</td><td class="us">Sunyi. Tanpa streak, skor, atau feed.</td><td>Sering ada fitur sosial, teman, dan pengingat yang ramai.</td></tr><tr><td>Tanpa internet</td><td class="us">Semua terjemahan sudah ada di HP.</td><td>Umumnya bisa, setelah mengunduh versi yang dipilih.</td></tr><tr><td>Terjemahan</td><td class="us">13 terjemahan, 10 bahasa.</td><td>Sangat banyak, sering sampai ribuan.</td></tr><tr><td>Audio dan rencana baca</td><td class="us">Belum ada.</td><td>Biasanya lengkap.</td></tr><tr><td>Biaya</td><td class="us">Gratis untuk dipakai sehari-hari. Pro opsional, tahunan atau sekali bayar.</td><td>Berbeda-beda tiap app.</td></tr></tbody></table></div>
+<p class="note">Kolom kanan adalah gambaran umum, bukan penilaian untuk satu app tertentu. Fitur app lain bisa berubah, jadi cek langsung di app-nya.</p>
+<div class="two"><div class="box"><h3>Pilih Breadlight kalau kamu</h3><ul><li>ingin waktu teduh tanpa gangguan</li><li>tidak mau membuat akun atau membagikan data</li><li>butuh tempat menulis doa yang benar-benar pribadi</li><li>sering di tempat dengan sinyal jelek</li></ul></div><div class="box"><h3>Tetap pakai app besar kalau kamu</h3><ul><li>butuh ribuan terjemahan atau Alkitab bahasa daerah</li><li>suka audio Alkitab dan rencana baca bersama komunitas</li><li>ingin semua tersinkron di banyak perangkat</li></ul></div></div>
+<p style="margin-top:16px">Dua-duanya boleh dipasang. Banyak orang memakai app besar untuk studi, dan Breadlight untuk pagi yang tenang.</p></section>
+<section id="faq"><p class="kicker">Tanya jawab</p><h2>Pertanyaan yang sering muncul</h2><div class="faq"><details><summary>Breadlight gratis?</summary><div class="a"><p>Ya, gratis untuk dipakai sehari-hari. Gratis sudah termasuk 13 terjemahan, kartu ayat harian, Ayat untuk Seseorang, 10 gaya seni ayat, tiga sesi waktu teduh yang berganti, dan jurnal sampai 10 catatan.</p><p>Ada versi Pro yang opsional. Harganya selalu tampil di Google Play sebelum kamu konfirmasi.</p></div></details><details><summary>Pro itu dapat apa?</summary><div class="a"><p>Baca dua terjemahan berdampingan, tema baca (Paper, Sepia, Warm Night), 30 gaya seni ayat, gambar tanpa tanda Breadlight, ekspor jurnal ke PDF, ketujuh sesi waktu teduh, jurnal tanpa batas dengan kalender, dan lebih banyak jenis catatan.</p><p>Pilihannya Pro tahunan (diperpanjang sampai kamu batalkan di Google Play) atau bayar sekali untuk Lifetime.</p></div></details><details><summary>Perlu internet?</summary><div class="a"><p>Tidak untuk membaca. Semua terjemahan tersimpan di HP. Internet hanya dipakai untuk hal seperti memasang app atau membeli Pro lewat Google Play.</p></div></details><details><summary>Harus daftar atau login?</summary><div class="a"><p>Tidak. Tidak ada akun sama sekali. Pasang, buka, langsung pakai.</p></div></details><details><summary>Jurnal doaku aman? Siapa bisa baca?</summary><div class="a"><p>Jurnal tersimpan di perangkatmu. Tidak ada akun dan tidak ada sinkron cloud, jadi kami tidak pernah melihat apa yang kamu tulis.</p><p>Satu hal yang perlu diingat: kalau kamu menghapus (uninstall) app-nya, jurnal ikut terhapus. Karena itu buat ekspor secara berkala.</p></div></details><details><summary>Ganti HP, jurnalnya bagaimana?</summary><div class="a"><p>Ekspor salinan jurnal dari HP lama, lalu impor di HP baru. Karena tidak ada cloud, langkah ini perlu kamu lakukan sendiri sebelum berpindah.</p></div></details><details><summary>Ada iklan atau pelacakan?</summary><div class="a"><p>Tidak ada iklan dan tidak ada analitik. Pembelian diproses oleh Google Play.</p></div></details><details><summary>Terjemahan dan bahasa apa saja yang ada?</summary><div class="a"><p>13 terjemahan dalam 10 bahasa: di Inggris ada KJV, WEB, dan BSB, ditambah Spanyol, Prancis, Jerman, Portugis, Italia, Rusia, Swahili, Tagalog, dan Hindi.</p><p>Teks Alkitab bahasa Indonesia belum termasuk.</p></div></details><details><summary>Ada audio Alkitab atau rencana baca?</summary><div class="a"><p>Belum. Fokus Breadlight adalah membaca, merenung, berdoa, dan menulis. Kalau kamu butuh audio atau rencana baca bersama komunitas, app Alkitab besar lebih cocok untuk bagian itu.</p></div></details><details><summary>Bisa menggantikan Alkitab cetak atau gereja?</summary><div class="a"><p>Tidak, dan memang tidak dimaksudkan begitu. Breadlight adalah teman untuk waktumu bersama Tuhan. Ia tidak menggantikan Alkitabmu, gerejamu, atau orang-orang yang berjalan bersamamu.</p></div></details><details><summary>Di mana mengunduhnya?</summary><div class="a"><p>Cari “Breadlight: Bible &amp; Quiet Time” di Google Play, atau pakai tombol di bagian atas. Tersedia untuk Android.</p></div></details></div></section>
+<div class="share"><h2>Bagikan ke teman</h2><p>Salin pesan singkat ini dan kirim lewat WhatsApp atau chat apa pun.</p><div class="blurb" id="blurb">Aku baru pakai Breadlight, app Alkitab yang tenang banget. Bisa dibaca tanpa internet, ada jurnal doa pribadi, tanpa iklan, dan tanpa daftar akun. Coba lihat: https://play.google.com/store/apps/details?id=com.breadlight.app</div><button class="btn btn-gold" id="copy" type="button">Salin pesan</button><span class="status" id="status" role="status"></span></div>
+<footer><p>Breadlight adalah teman untuk waktumu bersama Tuhan. Ia tidak menggantikan Alkitabmu, gerejamu, atau orang-orang yang berjalan bersamamu.</p><div class="legal"><a href="privacy.id.html">Kebijakan privasi</a><span>Dukungan: support.wijh7@gmail.com</span></div></footer>
+</main>
+<script>
+(function(){
+  var M={"ok": "Tersalin", "no": "Teks terpilih, salin manual"};
+  var btn=document.getElementById('copy'),st=document.getElementById('status'),box=document.getElementById('blurb');
+  function done(m){st.textContent=m;setTimeout(function(){st.textContent=''},3000)}
+  function sel(){var r=document.createRange();r.selectNodeContents(box);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  btn.addEventListener('click',function(){
+    var t=box.textContent;
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){done(M.ok)},function(){sel();done(M.no)})}
+    else{sel();done(M.no)}
+  });
+})();
+</script>
+</body>
+</html>

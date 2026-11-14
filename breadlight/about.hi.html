@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Breadlight से मिलिए | Breadlight</title>
+<meta name="description" content="Breadlight एक शांत Android बाइबल ऐप है: ऑफ़लाइन बाइबल, निजी प्रार्थना डायरी, कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं, कोई अकाउंट नहीं।">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Breadlight से मिलिए | Breadlight">
+<meta property="og:description" content="Breadlight एक शांत Android बाइबल ऐप है: ऑफ़लाइन बाइबल, निजी प्रार्थना डायरी, कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं, कोई अकाउंट नहीं।">
+<meta property="og:image" content="https://wijh7.github.io/breadlight/img/hero.jpg">
+<link rel="canonical" href="https://wijh7.github.io/breadlight/about.hi.html">
+<link rel="alternate" hreflang="en" href="https://wijh7.github.io/breadlight/about.html">
+<link rel="alternate" hreflang="id" href="https://wijh7.github.io/breadlight/about.id.html">
+<link rel="alternate" hreflang="es" href="https://wijh7.github.io/breadlight/about.es.html">
+<link rel="alternate" hreflang="pt" href="https://wijh7.github.io/breadlight/about.pt.html">
+<link rel="alternate" hreflang="fr" href="https://wijh7.github.io/breadlight/about.fr.html">
+<link rel="alternate" hreflang="de" href="https://wijh7.github.io/breadlight/about.de.html">
+<link rel="alternate" hreflang="ru" href="https://wijh7.github.io/breadlight/about.ru.html">
+<link rel="alternate" hreflang="hi" href="https://wijh7.github.io/breadlight/about.hi.html">
+<link rel="alternate" hreflang="x-default" href="https://wijh7.github.io/breadlight/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Serif+Devanagari:wght@600;700&display=swap">
+<style>
+/* Layout: satu kolom bacaan 720px, hero hijau penuh lebar, tabel perbandingan dan tanya-jawab di bawah */
+:root{
+  --bg:#F6F2EA; --surface:#FDFBF7; --fg:#1C2A23; --muted:#5A675F; --line:#DDD6C7;
+  --green:#1F4D3A; --on-green:#F4EFE6; --gold:#8A6212; --gold-soft:#E2B65A; --chip:#E7EFE9;
+  --ok:#2E7D57; --no:#9A5B2E;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif; --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111915; --surface:#18221D; --fg:#ECE6D8; --muted:#A5B0A8; --line:#2B3831;
+  --green:#1F4D3A; --on-green:#F4EFE6; --gold:#E2B65A; --gold-soft:#E2B65A; --chip:#21332A;
+  --ok:#6FC79A; --no:#D9A271; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111915; --surface:#18221D; --fg:#ECE6D8; --muted:#A5B0A8; --line:#2B3831;
+  --green:#1F4D3A; --on-green:#F4EFE6; --gold:#E2B65A; --gold-soft:#E2B65A; --chip:#21332A;
+  --ok:#6FC79A; --no:#D9A271; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.65 var(--sans);-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px;border-radius:6px}
+
+/* hero */
+.hero{background:var(--green);color:var(--on-green)}
+.hero .wrap{padding-block:40px 0}
+.brand{font:700 20px/1 var(--serif);letter-spacing:.3px;margin:0 0 28px}
+.hero h1{font-size:clamp(34px,7.4vw,52px);line-height:1.08;letter-spacing:-.5px;font-weight:700}
+.lead{font-size:19px;line-height:1.55;margin:18px 0 0;max-width:34em;color:#E3EADF}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 36px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-gold{background:var(--gold-soft);color:#1A2A20}
+.btn-line{background:transparent;color:var(--on-green);border-color:rgba(244,239,230,.55)}
+.hero img{display:block;width:100%;height:auto;aspect-ratio:1024/500;border-radius:14px 14px 0 0;margin-top:4px}
+
+section{padding-block:52px 0}
+h2{font-size:clamp(27px,5.2vw,34px);line-height:1.15;letter-spacing:-.3px;margin-bottom:14px}
+.kicker{font:600 12.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+p{margin:0 0 14px}
+.muted{color:var(--muted)}
+
+
+/* galeri layar */
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:22px calc(-1*max(16px,env(safe-area-inset-left,0px))) 0;padding:6px max(16px,env(safe-area-inset-left,0px)) 18px;-webkit-overflow-scrolling:touch}
+.shot{flex:none;width:min(62vw,250px);scroll-snap-align:start;margin:0}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:9/16;border-radius:22px;border:1px solid var(--line);background:var(--surface);box-shadow:0 10px 30px rgba(20,40,30,.14)}
+.shot figcaption{font-size:14.5px;line-height:1.45;color:var(--muted);margin-top:10px;padding-inline:4px}
+.shot figcaption b{display:block;color:var(--fg);font:600 15.5px/1.35 var(--serif);margin-bottom:2px}
+.hint{font-size:14px;color:var(--muted);margin:2px 0 0}
+/* satu pagi */
+.day{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+.day li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.day time{font:700 15px/1.5 var(--sans);color:var(--gold);white-space:nowrap;min-width:3.6em}
+.day b{font:600 18px/1.35 var(--serif);display:block;margin-bottom:2px}
+.day span{color:var(--muted);font-size:16px}
+
+/* ringkas: tiga janji */
+.promises{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:22px}
+.promise{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;min-width:0}
+.promise h3{font-size:20px;margin-bottom:6px}
+.promise p{margin:0;font-size:15.5px;line-height:1.55;color:var(--muted)}
+
+/* fitur */
+.feat{display:grid;gap:0;margin:8px 0 0;padding:0;list-style:none}
+.feat li{display:grid;grid-template-columns:minmax(0,11em) minmax(0,1fr);gap:6px 22px;padding:16px 0;border-top:1px solid var(--line)}
+.feat li:last-child{border-bottom:1px solid var(--line)}
+.feat b{font:600 17px/1.35 var(--serif)}
+.feat span{color:var(--muted);font-size:16px}
+@media (max-width:560px){.feat li{grid-template-columns:1fr}}
+
+/* tabel */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-top:18px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15.5px;line-height:1.5}
+th,td{text-align:left;vertical-align:top;padding:13px 16px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font:600 13px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:transparent}
+th.us{color:var(--gold)}
+td:first-child{font-weight:600;width:26%}
+td.us{background:var(--chip)}
+.yes{color:var(--ok);font-weight:600}
+.note{font-size:14.5px;color:var(--muted);margin-top:12px}
+
+/* jujur */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:20px}
+.box{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);min-width:0}
+.box h3{font-size:20px;margin-bottom:10px}
+.box ul{margin:0;padding-left:1.15em}
+.box li{margin:0 0 8px}
+
+/* tanya jawab */
+.faq{margin-top:12px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:18px 0;font:600 18px/1.4 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;font:400 26px/1 var(--sans);color:var(--gold);margin-top:-2px}
+details[open] summary::after{content:"\2212"}
+details .a{padding:0 0 18px;color:var(--fg)}
+details .a p{margin:0 0 10px}
+details .a p:last-child{margin:0}
+
+/* bagikan */
+.share{margin-top:56px;background:var(--green);color:var(--on-green);border-radius:18px;padding:26px 22px}
+.share h2{margin-bottom:8px}
+.share p{color:#E3EADF}
+.blurb{background:rgba(0,0,0,.22);border-radius:12px;padding:14px 16px;font-size:15.5px;line-height:1.55;white-space:pre-wrap;margin:14px 0 16px;color:#F4EFE6;user-select:all}
+.status{margin-left:12px;font-size:14.5px;color:var(--gold-soft)}
+footer{padding-block:34px max(40px,env(safe-area-inset-bottom,0px));font-size:14.5px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.langs{display:flex;flex-wrap:wrap;gap:6px 8px;margin:0 0 26px;padding:0;list-style:none}
+.langs a{display:inline-block;padding:6px 12px;border-radius:999px;font:500 14px/1.2 var(--sans);text-decoration:none;color:var(--on-green);border:1px solid rgba(244,239,230,.35)}
+.langs a[aria-current="true"]{background:var(--gold-soft);color:#1A2A20;border-color:var(--gold-soft);font-weight:600}
+.legal{display:flex;flex-wrap:wrap;gap:6px 18px}
+html[lang="hi"]{--serif:'Noto Serif Devanagari','Source Serif 4',serif;--sans:'Noto Sans Devanagari','Inter',system-ui,sans-serif}
+html[lang="hi"] body{line-height:1.8}
+html[lang="hi"] h1,html[lang="hi"] h2{line-height:1.3;letter-spacing:0}
+.kicker{text-transform:none}
+.hero .wrap{max-width:980px;padding-block:36px 44px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.hero .hero-photo{display:block;width:100%;height:auto;aspect-ratio:582/613;object-fit:cover;border-radius:18px;margin:0;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.hero-actions{margin-bottom:0}
+.shots{scroll-padding-left:max(16px,env(safe-area-inset-left,0px))}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr;gap:26px}.hero .hero-photo{aspect-ratio:16/10;object-position:50% 28%}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <ul class="langs" aria-label="भाषा"><li><a href="about.html" hreflang="en" lang="en">English</a></li><li><a href="about.id.html" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="about.es.html" hreflang="es" lang="es">Español</a></li><li><a href="about.pt.html" hreflang="pt" lang="pt">Português</a></li><li><a href="about.fr.html" hreflang="fr" lang="fr">Français</a></li><li><a href="about.de.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="about.ru.html" hreflang="ru" lang="ru">Русский</a></li><li><a href="about.hi.html" hreflang="hi" lang="hi" aria-current="true">हिन्दी</a></li></ul>
+    <div class="hero-grid">
+    <div class="hero-text">
+    <p class="brand">Breadlight</p>
+    <h1>बाइबल ऐप, जो आख़िरकार शांत है।</h1>
+    <p class="lead">अपने फ़ोन पर पवित्रशास्त्र पढ़ें, प्रार्थना करें और निजी डायरी रखें। कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं, कोई अकाउंट नहीं। बिना इंटरनेट के भी चलता है।</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="https://play.google.com/store/apps/details?id=com.breadlight.app&hl=hi" target="_blank" rel="noopener">Google Play पर देखें</a>
+      <a class="btn btn-line" href="#faq">कोई सवाल है?</a>
+    </div>
+    </div>
+    <img class="hero-photo" src="img/hero-photo.jpg" width="582" height="613" alt="">
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<section><p class="kicker">संक्षेप में</p><h2>Breadlight क्या है?</h2><p>Breadlight परमेश्वर के साथ आपके शांत समय के लिए एक Android ऐप है। इसमें ऑफ़लाइन बाइबल, आज के पद का कार्ड, छोटे निर्देशित सत्र और एक निजी प्रार्थना डायरी है।</p><p>विचार सीधा है। फ़ोन परमेश्वर से मिलने के लिए उठाइए, विज्ञापनों, नोटिफ़िकेशन या दूसरों की टाइमलाइन में खो जाने के लिए नहीं।</p><div class="promises"><div class="promise"><h3>शांत</h3><p>कोई विज्ञापन नहीं। कोई स्ट्रीक या स्कोर नहीं, और एक दिन छूटने पर कोई अपराध-बोध नहीं।</p></div><div class="promise"><h3>निजी</h3><p>कोई अकाउंट नहीं। आपकी डायरी आपके फ़ोन में ही रहती है और हमारे सर्वर पर कभी नहीं भेजी जाती।</p></div><div class="promise"><h3>हमेशा साथ</h3><p>बाइबल आपके फ़ोन में रखी है, इसलिए हवाई जहाज़ में, पहाड़ पर या डेटा ख़त्म होने पर भी पढ़ सकते हैं।</p></div></div></section>
+<section><p class="kicker">कैसा दिखता है</p><h2>अंदर झाँकिए</h2><p class="muted">ऐप के स्क्रीनशॉट। सब देखने के लिए बगल में स्वाइप करें।</p><div class="shots" role="region" aria-label="अंदर झाँकिए" tabindex="0"><figure class="shot"><img src="img/ss-1.jpg" width="540" height="960" loading="lazy" alt="ऑफ़लाइन बाइबल पढ़ें"><figcaption><b>ऑफ़लाइन बाइबल पढ़ें</b></figcaption></figure><figure class="shot"><img src="img/ss-2.jpg" width="540" height="960" loading="lazy" alt="आज का पद"><figcaption><b>आज का पद</b></figcaption></figure><figure class="shot"><img src="img/ss-3.jpg" width="540" height="960" loading="lazy" alt="निजी डायरी"><figcaption><b>निजी डायरी</b></figcaption></figure><figure class="shot"><img src="img/ss-4.jpg" width="540" height="960" loading="lazy" alt="नई प्रविष्टि लिखें"><figcaption><b>नई प्रविष्टि लिखें</b></figcaption></figure><figure class="shot"><img src="img/ss-5.jpg" width="540" height="960" loading="lazy" alt="पद कला"><figcaption><b>पद कला</b></figcaption></figure><figure class="shot"><img src="img/ss-6.jpg" width="540" height="960" loading="lazy" alt="पढ़ने की थीम"><figcaption><b>पढ़ने की थीम</b></figcaption></figure></div></section>
+<section><p class="kicker">एक उदाहरण दिन</p><h2>Breadlight के साथ एक दिन</h2><ol class="day"><li><time>सुबह</time><div><b>पद का कार्ड खोलें</b><span>कॉफ़ी बनते-बनते एक पद और छोटा मनन पढ़ें।</span></div></li><li><time>शांति</time><div><b>कुछ मिनट का शांत समय</b><span>निर्देशित सत्र का अनुसरण करें: पवित्रशास्त्र, मनन, प्रार्थना। जब चाहें रुकें, बाद में जारी रखें।</span></div></li><li><time>दोपहर</time><div><b>किसी मित्र को पद भेजें</b><span>कोई कठिन समय में है? उसकी स्थिति चुनें, नाम जोड़ें और WhatsApp से भेजें।</span></div></li><li><time>रात</time><div><b>प्रार्थना डायरी में लिखें</b><span>आज किस बात के लिए धन्यवादी हैं और क्या बोझ लिए हैं, लिख लें। इसे सिर्फ़ आप पढ़ सकते हैं।</span></div></li></ol></section>
+<section><p class="kicker">अंदर क्या है</p><h2>इससे क्या कर सकते हैं?</h2><ul class="feat"><li><b>ऑफ़लाइन बाइबल</b><span>10 भाषाओं में 13 अनुवाद। शब्द, वाक्यांश या यूहन्ना 3:16 जैसे संदर्भ से खोजें। हर पद पर बुकमार्क, हाइलाइट और नोट। पाठ हमेशा सटीक रहता है, कभी छोटा या दूसरे शब्दों में नहीं।</span></li><li><b>आज के पद का कार्ड</b><span>एक चुना हुआ पद, छोटा मनन और दिन भर साथ रखने के लिए एक कोमल प्रश्न। आगमन, क्रिसमस, ईस्टर और अन्य अवसरों के विशेष कार्ड।</span></li><li><b>निर्देशित शांत समय</b><span>कुछ शांत मिनटों में पवित्रशास्त्र, मनन, प्रार्थना, अभ्यास और बढ़ोतरी। शुरुआत “Rooted by the Water” (भजन संहिता 1) से होती है।</span></li><li><b>निजी प्रार्थना डायरी</b><span>प्रार्थनाएँ, धन्यवाद, सीख और पवित्रशास्त्र के नोट लिखें, चाहें तो किसी पद से जोड़कर। यह सिर्फ़ आपके डिवाइस पर रहती है।</span></li><li><b>किसी के लिए एक पद</b><span>बीमारी, शोक या नई शुरुआत जैसी स्थिति चुनें, नाम और कुछ शब्द जोड़ें, और सटीक बाइबल पाठ WhatsApp या किसी भी ऐप से भेजें।</span></li><li><b>पद कला</b><span>किसी पद को Stories या पोस्ट के लिए चित्र बनाएँ। 10 क्लासिक शैलियाँ मुफ़्त हैं।</span></li></ul></section>
+<section id="beda"><p class="kicker">दूसरों की तुलना में</p><h2>बड़े बाइबल ऐप्स से यह कैसे अलग है?</h2><p>बड़े बाइबल ऐप अच्छे हैं और उन्होंने बहुत लोगों की मदद की है। Breadlight उनकी जगह लेने की कोशिश नहीं करता। इसे अलग तरह से बनाया गया है: छोटा, शांत और पूरी तरह आपका।</p>
+<div class="tbl" role="region" aria-label="बड़े बाइबल ऐप्स से यह कैसे अलग है?" tabindex="0"><table><thead><tr><th></th><th class="us">Breadlight</th><th>बड़े बाइबल ऐप, आम तौर पर</th></tr></thead><tbody><tr><td>अकाउंट</td><td class="us">ज़रूरी नहीं। बस खोलिए।</td><td>आम तौर पर सुझाया जाता है, सिंक, योजनाओं और समुदाय के लिए।</td></tr><tr><td>विज्ञापन और ट्रैकिंग</td><td class="us">कोई विज्ञापन नहीं। कोई एनालिटिक्स नहीं।</td><td>हर ऐप में अलग। उनकी गोपनीयता नीति देखें।</td></tr><tr><td>प्रार्थना डायरी</td><td class="us">मुख्य सुविधा। फ़ोन में सुरक्षित, एक्सपोर्ट और इम्पोर्ट हो सकती है।</td><td>अक्सर पदों के नोट, जो प्रायः अकाउंट या क्लाउड में रहते हैं।</td></tr><tr><td>माहौल</td><td class="us">शांत। कोई स्ट्रीक, स्कोर या फ़ीड नहीं।</td><td>अक्सर सोशल सुविधाएँ, दोस्त और बार-बार आने वाले रिमाइंडर।</td></tr><tr><td>बिना इंटरनेट</td><td class="us">सारे अनुवाद पहले से फ़ोन में हैं।</td><td>आम तौर पर चुने गए संस्करण डाउनलोड करने के बाद संभव।</td></tr><tr><td>अनुवाद</td><td class="us">13 अनुवाद, 10 भाषाएँ।</td><td>बहुत ज़्यादा, अक्सर हज़ारों।</td></tr><tr><td>ऑडियो और पढ़ने की योजनाएँ</td><td class="us">अभी नहीं।</td><td>आम तौर पर पूरी।</td></tr><tr><td>कीमत</td><td class="us">रोज़ के उपयोग के लिए मुफ़्त। Pro वैकल्पिक है: सालाना या एक बार।</td><td>हर ऐप में अलग।</td></tr></tbody></table></div>
+<p class="note">दाहिना कॉलम एक सामान्य तस्वीर है, किसी एक ऐप पर फ़ैसला नहीं। दूसरे ऐप बदलते रहते हैं, इसलिए सीधे देखें।</p>
+<div class="two"><div class="box"><h3>Breadlight चुनें अगर आप</h3><ul><li>बिना व्यवधान के शांत समय चाहते हैं</li><li>अकाउंट नहीं बनाना चाहते या डेटा साझा नहीं करना चाहते</li><li>लिखकर प्रार्थना करने के लिए सचमुच निजी जगह चाहते हैं</li><li>अक्सर कमज़ोर नेटवर्क वाली जगह होते हैं</li></ul></div><div class="box"><h3>बड़ा ऐप रखें अगर आपको</h3><ul><li>हज़ारों अनुवाद या स्थानीय भाषाएँ चाहिए</li><li>ऑडियो बाइबल और समुदाय के साथ पढ़ने की योजनाएँ पसंद हैं</li><li>सब कुछ कई डिवाइस पर सिंक चाहिए</li></ul></div></div>
+<p style="margin-top:16px">दोनों इंस्टॉल कर सकते हैं। कई लोग अध्ययन के लिए बड़ा ऐप और शांत सुबह के लिए Breadlight इस्तेमाल करते हैं।</p></section>
+<section id="faq"><p class="kicker">सवाल और जवाब</p><h2>अक्सर पूछे जाने वाले सवाल</h2><div class="faq"><details><summary>क्या Breadlight मुफ़्त है?</summary><div class="a"><p>हाँ, रोज़ के उपयोग के लिए। मुफ़्त में सभी 13 अनुवाद, आज के पद के कार्ड, किसी के लिए एक पद, 10 क्लासिक शैलियाँ, तीन बारी-बारी से आने वाले सत्र और डायरी की 10 प्रविष्टियाँ तक शामिल हैं।</p><p>Pro वैकल्पिक है। पुष्टि से पहले Google Play कीमत दिखाता है।</p></div></details><details><summary>Pro में क्या मिलता है?</summary><div class="a"><p>दो अनुवादों को साथ-साथ पढ़ना, पढ़ने की थीम (Paper, Sepia, Warm Night), 30 Studio शैलियाँ, बिना Breadlight निशान वाली छवियाँ, डायरी का PDF एक्सपोर्ट, सभी 7 निर्देशित सत्र, कैलेंडर के साथ असीमित प्रविष्टियाँ और अधिक प्रकार की प्रविष्टियाँ।</p><p>सालाना Pro चुनें (जब तक आप Google Play में रद्द न करें, नवीनीकरण होता रहेगा) या Lifetime के लिए एक बार भुगतान करें।</p></div></details><details><summary>क्या इंटरनेट चाहिए?</summary><div class="a"><p>पढ़ने के लिए नहीं। सारे अनुवाद आपके फ़ोन में हैं। इंटरनेट सिर्फ़ ऐप इंस्टॉल करने या Google Play से Pro ख़रीदने जैसे कामों में लगता है।</p></div></details><details><summary>क्या साइन अप करना होगा?</summary><div class="a"><p>नहीं। कोई अकाउंट ही नहीं है। इंस्टॉल करें, खोलें और इस्तेमाल करें।</p></div></details><details><summary>क्या मेरी डायरी निजी है? इसे कौन पढ़ सकता है?</summary><div class="a"><p>आपकी डायरी आपके डिवाइस पर रहती है। कोई अकाउंट या क्लाउड सिंक नहीं है, इसलिए आप जो लिखते हैं वह हम कभी नहीं देखते।</p><p>एक बात याद रखें: ऐप अनइंस्टॉल करने पर डायरी भी मिट जाती है। समय-समय पर एक प्रति एक्सपोर्ट कर लें।</p></div></details><details><summary>फ़ोन बदलूँ तो?</summary><div class="a"><p>पुराने फ़ोन पर डायरी की प्रति एक्सपोर्ट करें और नए फ़ोन पर इम्पोर्ट करें। क्लाउड नहीं है, इसलिए यह क़दम बदलने से पहले आपको ख़ुद करना होगा।</p></div></details><details><summary>क्या विज्ञापन या ट्रैकिंग है?</summary><div class="a"><p>कोई विज्ञापन नहीं और कोई एनालिटिक्स नहीं। ख़रीदारियाँ Google Play संभालता है।</p></div></details><details><summary>कौन-से अनुवाद और भाषाएँ हैं?</summary><div class="a"><p>10 भाषाओं में 13 अनुवाद: अंग्रेज़ी में KJV, WEB और BSB, साथ में स्पेनिश, फ़्रेंच, जर्मन, पुर्तगाली, इतालवी, रूसी, स्वाहिली, तागालोग और हिन्दी।</p><p>इंडोनेशियाई बाइबल पाठ शामिल नहीं है।</p></div></details><details><summary>क्या ऑडियो बाइबल या पढ़ने की योजनाएँ हैं?</summary><div class="a"><p>अभी नहीं। Breadlight पढ़ने, मनन, प्रार्थना और लिखने पर केंद्रित है। अगर आपको ऑडियो या समुदाय के साथ योजनाएँ चाहिए, तो उस हिस्से के लिए बड़ा बाइबल ऐप बेहतर है।</p></div></details><details><summary>क्या यह मेरी बाइबल या मेरी कलीसिया की जगह लेता है?</summary><div class="a"><p>नहीं, और इसका मक़सद भी यह नहीं है। Breadlight परमेश्वर के साथ आपके समय का साथी है। यह आपकी बाइबल, आपकी कलीसिया या आपके साथ चलने वाले लोगों की जगह नहीं लेता।</p></div></details><details><summary>इसे कहाँ से लें?</summary><div class="a"><p>Google Play पर “Breadlight: Bible &amp; Quiet Time” खोजें या ऊपर के बटन का इस्तेमाल करें। यह Android के लिए उपलब्ध है।</p></div></details></div></section>
+<div class="share"><h2>किसी मित्र के साथ साझा करें</h2><p>यह छोटा संदेश कॉपी करें और WhatsApp या किसी भी चैट से भेजें।</p><div class="blurb" id="blurb">मैंने अभी Breadlight इस्तेमाल करना शुरू किया है, एक बहुत शांत बाइबल ऐप। बिना इंटरनेट चलता है, निजी प्रार्थना डायरी है, कोई विज्ञापन नहीं और कोई अकाउंट नहीं। देखो: https://play.google.com/store/apps/details?id=com.breadlight.app</div><button class="btn btn-gold" id="copy" type="button">संदेश कॉपी करें</button><span class="status" id="status" role="status"></span></div>
+<footer><p>Breadlight परमेश्वर के साथ आपके समय का साथी है। यह आपकी बाइबल, आपकी कलीसिया या आपके साथ चलने वाले लोगों की जगह नहीं लेता।</p><div class="legal"><a href="privacy.hi.html">गोपनीयता नीति</a><span>सहायता: support.wijh7@gmail.com</span></div></footer>
+</main>
+<script>
+(function(){
+  var M={"ok": "कॉपी हो गया", "no": "टेक्स्ट चुना गया है, कृपया हाथ से कॉपी करें"};
+  var btn=document.getElementById('copy'),st=document.getElementById('status'),box=document.getElementById('blurb');
+  function done(m){st.textContent=m;setTimeout(function(){st.textContent=''},3000)}
+  function sel(){var r=document.createRange();r.selectNodeContents(box);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  btn.addEventListener('click',function(){
+    var t=box.textContent;
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){done(M.ok)},function(){sel();done(M.no)})}
+    else{sel();done(M.no)}
+  });
+})();
+</script>
+</body>
+</html>
